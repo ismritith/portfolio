@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // SQL query to insert data into the 'contact' table
-    $sql = "INSERT INTO contact (name, egmail, subject, address, date) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO contact (name, email, subject, address, date) VALUES (?, ?, ?, ?, ?)";
 
     // Prepare statement to prevent SQL injection
     if ($stmt = $conn->prepare($sql)) {
