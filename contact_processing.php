@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute the query
         if ($stmt->execute()) {
-            echo "<script>alert('Your message has been sent successfully!'); window.location.href='contact_form.html';</script>";
+            echo "<script>alert('Your message has been sent successfully!'); window.location.href='contact.php';</script>";
         } else {
             echo "<script>alert('Error saving your message. Please try again later.'); window.history.back();</script>";
         }
